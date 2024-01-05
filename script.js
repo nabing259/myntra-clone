@@ -26,8 +26,6 @@ const crazy_deals = [
 
 const deals_list = document.querySelector(".deals-list");
 for (let icon of crazy_deals) {
-  deals_list.append(`
-  <img src=${icon}>
-  `)
+  deals_list.innerHTML += `<img src=${icon}>`;
   console.log(icon);
 }
